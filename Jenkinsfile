@@ -1,8 +1,3 @@
-/**
- * JenkinsFile for the CI and CD pipeline.
- * ~~ MANAGED BY DEVOPS ~~
- */
-
 pipeline {
 
     agent none
@@ -25,23 +20,6 @@ pipeline {
                 script { echo 'running sample script '
                 }
             }
-        }
-        stage('Initialise') {
-        }
-        stage('Prepare') {
-            agent {
-                label 'windows'
-            }
-            when {
-                expression {1==1}
-            }
-            steps {
-                script {
-                     echo "RUNNING... PREPARING STAGE .....  ${env.BUILD_NUMBER}"
-                }
-            }
-        }
-        stage('Production') {
         }
     }
 }
