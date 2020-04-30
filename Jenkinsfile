@@ -4,6 +4,7 @@ pipeline {
 
     stages {
         stage('Master') {
+        echo "running master stage .... "
             when {
                 branch 'master'
             }
