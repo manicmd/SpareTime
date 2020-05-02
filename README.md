@@ -1,2 +1,2 @@
-# apple_api
-this is test repo for api tests
+# SpareTime
+this is private repo to experiment, develop, test and publish python functions and modules.
