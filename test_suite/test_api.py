@@ -7,3 +7,5 @@ def test_status_code(url):
         print("Test 1 Success")
 
 test_status_code("www.google.com")
+
+
