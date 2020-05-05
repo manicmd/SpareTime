@@ -22,10 +22,9 @@ def what_is_the_item(item):
 what_is_the_item(user_need)
 
 
-def merge_list(*no_of_list):
-#    full_list = list1 + list2 + list3
-    full_list1 = no_of_list[0] + no_of_list[1] + no_of_list[2]
-    print("This is the full list: ", full_list1)
+def merge_list(list1, list2, list3):
+    full_list = list1.extend([list2] + [list3])
+    print("This is the full list: ", list(full_list)
 
 merge_list(fruits, vegs, drinks)
 
